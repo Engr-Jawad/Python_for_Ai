@@ -66,10 +66,29 @@
 
 
 
-
+# -------------------------------------------
 # Q7. Ask the user for a temperature in Celsius (string input). Convert it to float ,
 # then calculate and print temperature in Fahrenheit.
 # Conversion formula: F ahrenheitT emp = (CelsiusT emp ∗ (9/5)) +32)
 # celsius = float(input("enter the temprature : "))
 # Fahrenheite  = (celsius * (9/5) )+ 32
 # print("Fahrenheite : ",Fahrenheite)
+
+
+
+# -------------------------------------------
+# Take the radius (r) as user input and print the area.
+# radius = float(input("enter the radius of the circle : "))
+# area = 3.14 * radius ** 2 
+# print("Area of the circle : ",area)
+
+
+
+# -------------------------------------------
+# Take a decimal number as input (like 45.78 ) and output its:
+# number  = float(input("enter the number : "))
+# integer_part = int(number)
+# fraction_part = number - integer_part
+
+# print(integer_part)
+# print(fraction_part)
