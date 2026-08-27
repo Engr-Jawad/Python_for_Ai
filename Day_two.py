@@ -60,4 +60,25 @@ if __name__ == "__main___":
     print_digits(number)
     """
 
+# problem four 
+# Write a function to return the count the number of digits in a number, n .
+""" def count_digits(number ):
+    if number ==  0 :
+            print(0)
+            return 
+    digitss = []
+    while number > 0 :
+          digits = number % 10
+          digitss.append(digits)
+          number = number // 10
+    print("length of number : ",len(digitss))
+          
+        
+number = int(input("enter number :"))
+count_digits(number) 
+"""
+
+    
+           
+        
 
