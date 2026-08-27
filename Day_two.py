@@ -78,7 +78,25 @@ number = int(input("enter number :"))
 count_digits(number) 
 """
 
-    
+# problem five 
+# Write a function to return the sum of digits of a number, n .
+""" def sum_of_digits(number):
+    if number < 0:
+        print(0)
+        return 
+    sum=0
+    while number > 0 :
+        dig = number % 10
+        sum+=dig
+        number = number // 10
+    print(sum)
+        
+
+
+if __name__ == "__main__":
+    number = int(input("enter number : "))
+    sum_of_digits(number)
+    """
            
         
 
