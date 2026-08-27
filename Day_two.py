@@ -19,7 +19,7 @@ print("Salary : ",final_salary)
 
 
 
-
+# problem two 
 # Write a function that takes two integers a and b and prints all even numbers b/w them.
 """"
 def print_even(numone,numtwo):
@@ -37,3 +37,27 @@ if __name__ == "__main__":
 
 print_even(numone,numtwo)
 """
+
+
+
+
+# problem three
+# Q3. Write a function that prints the digits of a number, n .
+# For eg: n = 312 , there are 3 digits in it 3, 1 and 2 & we need to print them.
+"""def print_digits(number):
+    if number ==  0 :
+        print(0)
+        return 
+    else:
+        digits = number % 10
+        print(digits)
+        number = number // 10
+
+
+
+if __name__ == "__main___":
+    number = float(input("enter number :"))
+    print_digits(number)
+    """
+
+
