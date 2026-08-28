@@ -97,6 +97,22 @@ if __name__ == "__main__":
     number = int(input("enter number : "))
     sum_of_digits(number)
     """
-           
-        
+# problem six
+# Write a program to print all numbers from 1 to 100 that are divisible by both 3 and 5.
+
+
+""" def div_by_3_and_5(number):
+    for i in range (1,101):
+        if (i % 3 == 0) | (i % 5 == 0):
+            print(i,end = " ")
+    
+
+if __name__ == "__main__":
+    number = 1 
+    div_by_3_and_5(number)
+        """
+
+# problem seven
+# Design a program to continuously input a number n from user & print if it is positive or negative until the user enters “Quit”.
+
 
