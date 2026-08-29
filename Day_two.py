@@ -163,4 +163,20 @@ if __name__ == "__main__":
     numtwo = int(input("enter 2nd operator : "))
     Calculator(numone,operator,numtwo)
    """
-    
+
+# problem nine 
+# check if number is prime or not prime 
+""" def is_prime(number):
+    prime = True
+    if number > 0 :
+        for i in range(2,number):
+            if number % i == 0:
+                prime = False
+
+    print(prime)
+
+
+if __name__ == "__main__":
+    number = int(input("enter number : "))
+    is_prime(number)"""
+
