@@ -180,3 +180,32 @@ if __name__ == "__main__":
     number = int(input("enter number : "))
     is_prime(number)"""
 
+
+
+# problem ten
+# number gussing game 
+def num_gussing_game():
+    gussing_num = 65
+    while True:
+        number = (input("enter the number or (exit) to press E: "))
+        if number.lower() == "e":
+            print("you are exit from the system . ")
+            break
+        try :
+            number = int(number)
+            if number < gussing_num:
+                print("number is too low ")
+            elif number > gussing_num:
+                print("number is too high")
+            else:
+                print("you guess the correct number congrats.")
+                break
+        except ValueError :
+            print("you enter the invalid number ")
+
+if __name__ == "__main__":
+    print("*"*30)
+    print("Welcome to the  Number Gussing Game ")
+    print("*"*30)
+    
+    num_gussing_game()
