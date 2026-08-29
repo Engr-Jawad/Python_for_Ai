@@ -114,5 +114,26 @@ if __name__ == "__main__":
 
 # problem seven
 # Design a program to continuously input a number n from user & print if it is positive or negative until the user enters “Quit”.
+""" def check_positive_negative():
+    while True:
+        user_input = (input("enter number or (Quit press Q) : "))
+        if user_input.lower() == "quit":
+            print("your are exit from the program .")
+            break 
+        
+        try:
+                number = int(user_input)
+                if number < 0:
+                    print("number is negative")
+                elif number > 0:
+                    print("number is postive")
+                else:
+                    print("number is zero")
+        except ValueError:
+            print("invalid number or input ")
 
 
+
+if __name__ == "__main__":
+    check_positive_negative()
+"""
