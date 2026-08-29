@@ -137,3 +137,30 @@ if __name__ == "__main__":
 if __name__ == "__main__":
     check_positive_negative()
 """
+
+
+# problem 8
+# let’s create a Simple Calculator that performs arithmetic operations.
+""" def Calculator(numone,operator,numtwo):
+    if operator == "+":
+        add = numone + numtwo
+        print("add : ",add)
+    elif operator == "-":
+        sub = numone - numtwo
+        print("sub :",sub)
+    elif operator == "*":
+        mul = numone * numtwo
+        print("mul : ",mul)
+    elif operator == "/":
+        div = numone / numtwo
+        print("div : ",div)
+    else:
+        print("invalid operator")
+
+if __name__ == "__main__":
+    numone = int(input("ente ist number : "))
+    operator = input("enter operator : ")
+    numtwo = int(input("enter 2nd operator : "))
+    Calculator(numone,operator,numtwo)
+   """
+    
