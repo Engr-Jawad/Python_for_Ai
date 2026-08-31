@@ -34,7 +34,15 @@ if __name__== "__main__":
     avg_list(list)
     """
 
-# 
+# problem three
+# Input two lists of integers from the user. Merge them into one list and sort the result.
+# Eg - list1 = [1, 2, 7] , list2 = [2, 4, 5] result = [1,2,4,5,7]
+# Take two lists of integers from the user
+""" 
+list1 = list(map(int,input("enter ist list (separated spaces )").split()))
+list2 = list(map(int,input("enter 2nd list (separated spaces )").split()))
 
-
-
+merge = list1 + list2
+result = sorted(set(merge))   # sorted() guarantees order; set() removes duplicates
+print(result)
+"""
