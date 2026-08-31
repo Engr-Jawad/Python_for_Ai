@@ -17,7 +17,24 @@ if __name__ == "__main__":
     string = str(input("enter the string : "))
     palindrom(string) 
     """
-    
+
+# problem two
+# Given a list of integers compute the average of all numbers in the list.
+"""
+def avg_list(list):
+  sum = 0 
+  for i in list:
+     sum = sum + i
+     average = sum / len(list)
+  print("Average of list : ",average)
+
+
+if __name__== "__main__":
+    list =[1,2,3,4,5,6]
+    avg_list(list)
+    """
+
+# 
 
 
 
