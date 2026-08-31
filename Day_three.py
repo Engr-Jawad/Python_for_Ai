@@ -46,3 +46,15 @@ merge = list1 + list2
 result = sorted(set(merge))   # sorted() guarantees order; set() removes duplicates
 print(result)
 """
+
+# problem four 
+# Given a tuple of integers, create:
+# A tuple of all even numbers
+# A tuple of all odd numbers
+""" numbers = (1,2,3,4,5,6,7,8,9,10)
+even  = tuple(n for n in numbers if n % 2 == 0 )
+odd = tuple(n for n in numbers if n % 2 != 0 )
+print(even)
+print(odd)
+""" 
+    
