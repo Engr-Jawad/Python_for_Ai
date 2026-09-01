@@ -57,4 +57,97 @@ odd = tuple(n for n in numbers if n % 2 != 0 )
 print(even)
 print(odd)
 """ 
-    
+
+
+# problem five 
+#Q5. Create a dictionary where:
+# • Keys = student names
+# • Values = marks (integer)
+# Write a menu-based program where user presses a key ( A, ‘B , ‘C , ‘D ) depending on the operation they want to perform on the dictionary:
+# 1. A - Add a student
+#. B - Update marks
+# . C - Search for a student
+# . D - Display all students and marks
+
+
+student = {}
+def add_student():
+    std_name = input("Enter student name : ").strip()
+    if std_name in student:
+        print("student already exist .")
+        return 
+    try:
+        marks = int(input(f"enter marks for the {std_name}   "))
+    except ValueError:
+        print("Invalid input : marks must be integers .")
+        return 
+    student[std_name] = marks
+    print("*"*35)
+    print(f"Student Added {std_name } ----> {marks}")
+    print("*"*35)
+
+
+
+
+def update_student():
+    std_name = input("enter student name :")
+    if std_name not in student:
+        print("student not found in the record")
+        return
+    try:
+        marks = int(input("enter new marks for the studnet : "))
+    except ValueError :
+        print("marks must be integers")
+        return
+    student[std_name] = marks
+    print("*"*35)
+    print("student marks are update . ")
+    print("*"*35)
+
+
+
+def search_Student():
+    std_name = input("enter the studnet name ").strip()
+    if std_name  in student:
+        print(f"student  found  {std_name}.")
+    else:
+       print("student not found in the record .")
+
+
+
+def Display_student():
+    if not student:
+        print("no record found of the student.")
+        return
+    print("Students marks")
+    for std_name, marks in student.items():
+        print(f"{std_name}{marks}")
+        print("-" * 26)
+
+
+
+def main():
+    while True:
+        print("Welcome to the program")
+        print("A. Add student")
+        print("B. Update marks")
+        print("C. Search for a student")
+        print("D. Display all student and  marks")
+        print("E. Exit ")
+        choice = input("enter your choice : ").strip().upper()
+        if choice == "A":
+            add_student()
+        elif choice == "B":
+            update_student()
+        elif choice == "C":
+            search_Student()
+        elif choice == "D":
+            Display_student()
+        elif choice == "E":
+            break
+
+
+
+if __name__ == "__main__":
+    main()
+        
