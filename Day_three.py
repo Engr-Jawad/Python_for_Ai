@@ -163,4 +163,14 @@ for i in words:
 print(dic)
 """
 
-    
+
+# problem 7
+# Write a program that takes a string from the user and prints the number of spaces in the string.
+"""
+user_input = str(input("enter string (this program count the number of space in your string ) : "))
+count = 0
+for i in user_input:
+    if i == " ":
+        count+=1
+print("number of space in your string   =",count)
+"""
