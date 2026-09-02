@@ -174,3 +174,21 @@ for i in user_input:
         count+=1
 print("number of space in your string   =",count)
 """
+
+
+# problem 8
+# Write a program to check whether two lists share no common elements.
+""" 
+def has_no_common(list1,list2):
+    for i in list1:
+        if i in list2:
+            return False
+    return True
+        
+
+if __name__ == "__main__":
+        list1 = [ int(x) for x in input("enter element in the list (comma separated) :").split(",")]
+        list2 =[ int(x) for x in input("enter element in the list (comma separated) :").split(",")]
+        result = has_no_common(list1,list2)
+        print("list has share no common element : ",result)
+"""
