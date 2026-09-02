@@ -69,7 +69,7 @@ print(odd)
 # . C - Search for a student
 # . D - Display all students and marks
 
-
+""" 
 student = {}
 def add_student():
     std_name = input("Enter student name : ").strip()
@@ -77,7 +77,7 @@ def add_student():
         print("student already exist .")
         return 
     try:
-        marks = int(input(f"enter marks for the {std_name}   "))
+        marks = int(input(f"enter marks for  {std_name}   "))
     except ValueError:
         print("Invalid input : marks must be integers .")
         return 
@@ -151,3 +151,16 @@ def main():
 if __name__ == "__main__":
     main()
         
+""" 
+# problem six
+# Create a dictionary that maps each word to its length.
+""" 
+words =["jawad","Ayesha","zakir","abbas","murad"]
+dic = {}
+for i in words:
+    length = len(i)
+    dic[i] = length
+print(dic)
+"""
+
+    
