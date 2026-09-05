@@ -192,3 +192,17 @@ if __name__ == "__main__":
         result = has_no_common(list1,list2)
         print("list has share no common element : ",result)
 """
+
+# problem nine
+# Given a list, print all elements that appear more than once in the list.
+def print_duplicates(list):
+    dup = []
+    for i in list:
+        if list.count(i) > 1 and i not in dup:
+            print(i)
+
+
+
+list = [1,22,33,44,44,44,55,66,55]
+print_duplicates(list)
+   
